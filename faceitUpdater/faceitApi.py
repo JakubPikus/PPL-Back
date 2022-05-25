@@ -69,7 +69,6 @@ def update_match():
                         
                         new_match = Match()
                         new_match.match_id = past_match['match_id']
-                        print(past_match['match_id'])
                         new_match.player1 = players_array[0]
                         new_match.player2 = players_array[1]
                         new_match.player3 = players_array[2]

@@ -12,11 +12,13 @@ from .models import Player, Match, Statistic
 class PlayerViewSet(viewsets.ModelViewSet):
     queryset = Player.objects.all().order_by('-id')
     serializer_class = PlayerSerializer
+    http_method_names = ['get']
 
 
 class MatchViewSet(viewsets.ModelViewSet):
     queryset = Match.objects.all().order_by('-id')
     serializer_class = MatchSerializer
+    http_method_names = ['get']
 
 
 

@@ -6,5 +6,5 @@ from faceitUpdater import faceitApi
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(faceitApi.update_match, 'interval', minutes=30)
+    scheduler.add_job(faceitApi.update_match, 'interval', minutes=1)
     scheduler.start()
